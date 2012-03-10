@@ -14,7 +14,7 @@ Copy list of APIs from left sidebar of SDK (file:///home/jon/tools/android-sdk-l
   MainService or AndroidActionReceiver
 
 == Q3
-  <action android:name="android.intent.action.BOOT_COMPLETED" />
+  <action android:name="android.intent.action.SIG_STR" />
 
 == Q4
 
@@ -51,10 +51,10 @@ Copy list of APIs from left sidebar of SDK (file:///home/jon/tools/android-sdk-l
   XML
 
 == Q8
-  "push" Sends an SMS using data (incl. content, destination number) retrieved from the server's XML command
-  "soft" Logs a list of packages on the phone (to androidh.log and to the server), optionally searching for a specific name
-  "exec" Executes the a command via Runtime.getRuntime().exec() and displays a toast (unless the command is "pm uninstall jail.neo.lock")
-  "tanc" does nothing
-  "xbox" enables the 'flag1' boolean if the tanc command is not present
-  "no" does nothing
-  "note" sends an SMS containing a string retrieved from the C&C site, after sending phone info like imei
+  push Sends an SMS using data (incl. content, destination number) retrieved from the server's XML command
+  soft Logs a list of packages on the phone (to androidh.log and to the server), optionally searching for a specific name
+  exec Executes the a command via Runtime.getRuntime().exec() and displays a toast (unless the command is "pm uninstall jail.neo.lock")
+  tanc does nothing
+  xbox enables the 'flag1' boolean if the tanc command is not present
+  no   does nothing
+  note sends an SMS containing a (raw response) string retrieved from the C&C site, after sending phone info like imei
