@@ -1,0 +1,6 @@
+version: 1.4.1
+apkFileName: com.nloko.android.syncmypix-1.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
