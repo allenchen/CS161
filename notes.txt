@@ -13,6 +13,7 @@ Copy list of APIs from left sidebar of SDK (file:///home/jon/tools/android-sdk-l
       131: TelephonyManager.getDeviceId()
       133: TelephonyManager.getLine1Number()
       135: TelephonyManager.getSubscriberId()
+      663: PackageManager.getInstalledPackages
     MainService$SMSReceiver.java
       40: SmsMessage.getServiceCenterAddress()
       41: SmsMessage.getDisplayOriginatingAddress()
@@ -28,7 +29,7 @@ Copy list of APIs from left sidebar of SDK (file:///home/jon/tools/android-sdk-l
       71: URLConnection.getOutputStream()
       100: HttpURLConnection.connect()
     StringUtil.java
-      239: DefaultHttpClient.execute(HttpPost)
+      239: DefaultHttpClient.execute(HttpPost)   # never called
 
 == Q6
 
@@ -37,6 +38,9 @@ Copy list of APIs from left sidebar of SDK (file:///home/jon/tools/android-sdk-l
   http://csajlk.cefkp.com
 
 == Q7
+  XML
+
+== Q8
   "push" Sends an SMS using data (incl. content, destination number) retrieved from the server's XML command
   "soft" Logs a list of packages on the phone (to androidh.log and to the server), optionally searching for a specific name
   "exec" Executes the a command via Runtime.getRuntime().exec() and displays a toast (unless the command is "pm uninstall jail.neo.lock")
